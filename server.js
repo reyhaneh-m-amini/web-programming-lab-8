@@ -39,7 +39,7 @@ app.use(requestCounter);
 app.use(express.static(publicPath));
 
 app.get("/hello", (req, res) => {
-    res.send("Hello from Reyhaneh's server!");
+    res.type("text/plain").send("Hello from Reyhaneh's server!");
 });
 
 app.get("/robots.txt", (req, res) => {
